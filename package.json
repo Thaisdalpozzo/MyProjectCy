@@ -1,0 +1,17 @@
+{
+  "name": "cypress-fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testHeadless": "cypress run",
+    "testNav:open": "cypress open"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.3.2"
+  }
+}
