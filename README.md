@@ -28,6 +28,9 @@ cypress/ e2e/ login.cy.js # Teste de login fixtures/ support/ cypress.config.js 
 
 ---
 
+## ▶️ Demonstrando
+![](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
+
 ## ▶️ Como executar
 
 1. Clone este repositório:
@@ -46,9 +49,7 @@ npx cypress open
 *Em modo headless (sem interface):
 npx cypress run
 
-----------
-![Demonstração do login](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
-
+---------
 
 🎯 O que é testado
 Acesso à página de login
