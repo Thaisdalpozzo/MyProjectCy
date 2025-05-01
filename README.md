@@ -47,7 +47,7 @@ npx cypress open
 npx cypress run
 
 ----------
-![Demonstração do login](./downloads/login-test.gif)
+![Demonstração do login](cypress/downloads/login-test.gif)
 
 
 🎯 O que é testado
