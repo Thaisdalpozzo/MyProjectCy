@@ -79,14 +79,6 @@ npx cypress run
 
 ----------
 
-
-🎯 O que é testado
-Acesso à página de login
-
-Preenchimento correto dos campos de usuário e senha
-
-Verificação de redirecionamento após login bem-sucedido
-
 💡 Objetivo
 Este projeto faz parte dos meus estudos de automação de testes.
 Pretendo adicionar mais testes com diferentes fluxos e sites públicos.
