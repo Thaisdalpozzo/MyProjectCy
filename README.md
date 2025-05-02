@@ -57,7 +57,7 @@ Comandos criados para reutilização e clareza dos testes:
 
 ![Demonstração do login](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
 ![Demonstração do filtro](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/fill-products.gif)
-![Demonstração do carrinho](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/add-to-cart.gif.gif)
+![Demonstração do carrinho](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/add-to-cart.gif)
 
 ## ▶️ Como executar
 
