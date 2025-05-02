@@ -46,7 +46,6 @@ Comandos criados para reutilização e clareza dos testes:
 
 ---
 
-
 ## 🧪 Funcionalidades Testadas
 
 - Login com usuário padrão
@@ -55,6 +54,10 @@ Comandos criados para reutilização e clareza dos testes:
 - Preenchimento de checkout
 - Validação de valores (subtotal, taxa, total)
 - Finalização da compra
+
+![Demonstração do login](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
+![Demonstração do filtro](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/fill-products.gif)
+![Demonstração do carrinho](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/add-to-cart.gif.gif)
 
 ## ▶️ Como executar
 
@@ -75,9 +78,6 @@ npx cypress open
 npx cypress run
 
 ----------
-![Demonstração do login](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
-![Demonstração do filtro](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/fill-products.gif)
-![Demonstração do carrinho](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/add-to-cart.gif.gif)
 
 
 🎯 O que é testado
