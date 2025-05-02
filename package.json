@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "testHeadless": "cypress run",
-    "testNav:open": "cypress open"
-    
+    "testHeadless": "npx cypress run",
+    "testNav:open": "npx cypress open"
   },
   "keywords": [],
   "author": "",
