@@ -2,14 +2,9 @@
 
 Este repositório faz parte do meu plano de estudos como **QA Automation Engineer**, onde pratico automações de testes com [Cypress](https://www.cypress.io/) em sites públicos e cenários variados.
 
-## 🚀 Projeto Atual: Teste de Login
+## 🚀 Projeto Atual: Testes de Funcionalidades no Saucedemo
 
-Este projeto automatiza o fluxo de login no site [saucedemo.com](https://www.saucedemo.com), utilizando o Cypress.
-
-### 🔒 Dados de acesso para teste
-
-- **Usuário:** `standard_user`  
-- **Senha:** `secret_sauce`
+Este projeto automatiza diversos fluxos de interação no site [saucedemo.com](https://www.saucedemo.com), utilizando o Cypress. Além do teste de login, o projeto cobre a adição e remoção de itens no carrinho, filtros de preços, checkout, validação de totais, e outros fluxos de usuários com diferentes cenários.
 
 ---
 
@@ -23,41 +18,54 @@ Este projeto automatiza o fluxo de login no site [saucedemo.com](https://www.sau
 
 ## 📁 Estrutura do Projeto
 
-cypress/ ├── e2e/ # Testes de ponta a ponta │ ├── login.cy.js │ ├── add-to-cart.cy.js │ └── fill-products.cy.js ├── fixtures/ │ └── example.json # Dados simulados ├── support/ │ ├── commands.js # Registro dos comandos customizados │ ├── e2e.js # Importação de todos os comandos │ ├── commands-login.js # Comando: login │ ├── commands-checkout.js # Comandos: etapas de checkout │ ├── commands-filter.js # Comandos: filtros e verificações │ └── commands.d.ts # Tipagem para comandos (opcional)
+cypress/
+├── downloads/                     # (Pasta reservada, sem testes no momento)
 
----
+├── e2e/                           # Testes de ponta a ponta
+│   ├── add-to-cart.cy.js          # Testes de adicionar/remover itens do carrinho
+│   ├── fill-products.cy.js        # Testes de filtro por preço
+│   ├── login-errors.cy.js         # Testes de login com erros
+│   ├── login.cy.js                # Testes de login com usuário válido
+│   ├── logout.cy.js               # Teste de logout
+│   ├── performance.cy.js          # Teste de performance
+│   └── users.cy.js                # Testes com usuários bloqueado, problemático, etc.
 
-## 🔧 Comandos Customizados
+├── fixtures/
+│   └── example.json               # Dados simulados para testes
 
-Comandos criados para reutilização e clareza dos testes:
+├── support/
+│   ├── commands-checkout.js       # Comandos para etapas do checkout
+│   ├── commands-filter.js         # Comandos para filtros de produtos
+│   ├── commands-login.js          # Comandos de login
+│   ├── commands-users.js          # Comandos para testes com diferentes usuários
+│   ├── commands.d.ts              # Tipagem dos comandos (opcional)
+│   ├── commands.js                # Registro central dos comandos customizados
+│   └── e2e.js                     # Carregamento dos comandos no ambiente de testes
 
-| Comando | Descrição |
-|--------|-----------|
-| `cy.login()` | Realiza o login com `cy.session()` |
-| `cy.addtocard()` | Adiciona produtos ao carrinho |
-| `cy.removeitem()` | Remove um item do carrinho |
-| `cy.checkout()` | Preenche informações de checkout |
-| `cy.checkoutOverview()` | Valida informações de envio e pagamento |
-| `cy.priceTotal()` | Valida subtotal, taxa e total final |
-| `cy.finishCheckout()` | Finaliza a compra |
-| `cy.checkoutSucess()` | Verifica tela de sucesso da compra |
-| `cy.fillPriceLow()` | Verifica filtro "Preço: menor para maior" |
-| `cy.fillPriceHigh()` | Verifica filtro "Preço: maior para menor" |
 
 ---
 
 ## 🧪 Funcionalidades Testadas
 
-- Login com usuário padrão
-- Adição e remoção de produtos no carrinho
-- Filtros de ordenação por preço
-- Preenchimento de checkout
-- Validação de valores (subtotal, taxa, total)
-- Finalização da compra
+- **Login**: Testes com diferentes usuários (usuário padrão, bloqueado, com problemas de performance, e imagem trocada).
+- **Carrinho de Compras**: Adição e remoção de produtos, validação de itens no carrinho.
+- **Filtros de Produtos**: Ordenação dos produtos por preço (menor para maior e maior para menor), verificação de preços.
+- **Checkout**: Preenchimento de informações de pagamento, validação de subtotal, taxa, total, e finalização da compra.
+- **Validação de Performance**: Teste de tempo de carregamento da página (performance do site).
+- **Usuários Específicos**: Testes com usuários bloqueados, com problemas de imagem e usuários de performance.
+- **Login com Dados Inválidos**: Verificação de comportamentos de erro com dados inválidos ou ausentes.
+- **Logout**: Verificação do fluxo de logout e retorno à página inicial.
+- **Verificação de Imagens**: Validação da imagem do produto para garantir que está correta (como a imagem do "Sauce Labs Backpack").
+- **Erro de Login**: Testes de falha de login, como quando o nome de usuário ou senha estão incorretos.
 
 ![Demonstração do login](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
 ![Demonstração do filtro](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/fill-products.gif)
 ![Demonstração do carrinho](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/add-to-cart.gif)
+![Demonstração dos erros](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-errors.gif)
+![Demonstração do logout](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/logout.gif)
+![Demonstração dos users](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/users.gif)
+![Demonstração da performance](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/performance.gif)
+
 
 ## ▶️ Como executar
 
