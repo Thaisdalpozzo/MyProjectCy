@@ -1,4 +1,4 @@
-|X# 🧪 Projeto de Testes Automatizados com Cypress
+## 🧪 Projeto de Testes Automatizados com Cypress
 
 Este repositório faz parte do meu plano de estudos como **QA Automation Engineer**, onde pratico automações de testes com [Cypress](https://www.cypress.io/) em sites públicos e cenários variados.
 
