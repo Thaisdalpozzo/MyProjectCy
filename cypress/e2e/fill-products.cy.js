@@ -10,7 +10,6 @@ describe('Filtrando produtos por preço', () => {
     
         cy.fillPriceLow()
 
-
     });
 
     
@@ -18,12 +17,7 @@ describe('Filtrando produtos por preço', () => {
     
         cy.fillPriceHigh()
 
-
     });
   
-  
-
-    
-    
   });
   
