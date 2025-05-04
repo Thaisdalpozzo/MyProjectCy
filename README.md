@@ -15,13 +15,6 @@ Este projeto automatiza diversos fluxos de interação no site [saucedemo.com](h
 - Node.js
 
 ---
-![Demonstração do login](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
-![Demonstração do filtro](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/fill-products.gif)
-![Demonstração do carrinho](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/add-to-cart.gif)
-![Demonstração dos erros](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-errors.gif)
-![Demonstração do logout](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/logout.gif)
-![Demonstração dos users](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/users.gif)
-![Demonstração da performance](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/performance.gif)
 
 ## 📁 Estrutura do Projeto
 
@@ -46,9 +39,7 @@ cypress/
 │   ├── commands.d.ts           # Tipagem dos comandos (opcional)
 │   ├── commands.js             # Registro central dos comandos customizados
 │   └── e2e.js                  # Carregamento dos comandos no ambiente de testes
-
-
-
+```
 ---
 
 ## 🧪 Funcionalidades Testadas
@@ -64,7 +55,15 @@ cypress/
 - **Verificação de Imagens**: Validação da imagem do produto para garantir que está correta (como a imagem do "Sauce Labs Backpack").
 - **Erro de Login**: Testes de falha de login, como quando o nome de usuário ou senha estão incorretos.
 
+![Demonstração do login](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-test.gif)
+![Demonstração do filtro](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/fill-products.gif)
+![Demonstração do carrinho](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/add-to-cart.gif)
+![Demonstração dos erros](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/login-errors.gif)
+![Demonstração do logout](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/logout.gif)
+![Demonstração dos users](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/users.gif)
+![Demonstração da performance](https://raw.githubusercontent.com/Thaisdalpozzo/MyProjectCy/main/images/performance.gif)
 
+---
 ## ▶️ Como executar
 
 1. Clone este repositório:
