@@ -1,4 +1,4 @@
-# 🧪 Projeto de Testes Automatizados com Cypress
+|X# 🧪 Projeto de Testes Automatizados com Cypress
 
 Este repositório faz parte do meu plano de estudos como **QA Automation Engineer**, onde pratico automações de testes com [Cypress](https://www.cypress.io/) em sites públicos e cenários variados.
 
@@ -18,29 +18,28 @@ Este projeto automatiza diversos fluxos de interação no site [saucedemo.com](h
 
 ## 📁 Estrutura do Projeto
 
+```text
 cypress/
-├── downloads/                     # (Pasta reservada, sem testes no momento)
-
-├── e2e/                           # Testes de ponta a ponta
-│   ├── add-to-cart.cy.js          # Testes de adicionar/remover itens do carrinho
-│   ├── fill-products.cy.js        # Testes de filtro por preço
-│   ├── login-errors.cy.js         # Testes de login com erros
-│   ├── login.cy.js                # Testes de login com usuário válido
-│   ├── logout.cy.js               # Teste de logout
-│   ├── performance.cy.js          # Teste de performance
-│   └── users.cy.js                # Testes com usuários bloqueado, problemático, etc.
-
+├── downloads/                  # (Pasta reservada, sem testes no momento)
+├── e2e/                        # Testes de ponta a ponta
+│   ├── add-to-cart.cy.js       # Testes de adicionar/remover itens do carrinho
+│   ├── fill-products.cy.js     # Testes de filtro por preço
+│   ├── login-errors.cy.js      # Testes de login com erros
+│   ├── login.cy.js             # Testes de login com usuário válido
+│   ├── logout.cy.js            # Teste de logout
+│   ├── performance.cy.js       # Teste de performance
+│   └── users.cy.js             # Testes com usuários bloqueado, problemático, etc.
 ├── fixtures/
-│   └── example.json               # Dados simulados para testes
-
+│   └── example.json            # Dados simulados para testes
 ├── support/
-│   ├── commands-checkout.js       # Comandos para etapas do checkout
-│   ├── commands-filter.js         # Comandos para filtros de produtos
-│   ├── commands-login.js          # Comandos de login
-│   ├── commands-users.js          # Comandos para testes com diferentes usuários
-│   ├── commands.d.ts              # Tipagem dos comandos (opcional)
-│   ├── commands.js                # Registro central dos comandos customizados
-│   └── e2e.js                     # Carregamento dos comandos no ambiente de testes
+│   ├── commands-checkout.js    # Comandos para etapas do checkout
+│   ├── commands-filter.js      # Comandos para filtros de produtos
+│   ├── commands-login.js       # Comandos de login
+│   ├── commands-users.js       # Comandos para testes com diferentes usuários
+│   ├── commands.d.ts           # Tipagem dos comandos (opcional)
+│   ├── commands.js             # Registro central dos comandos customizados
+│   └── e2e.js                  # Carregamento dos comandos no ambiente de testes
+
 
 
 ---
